@@ -1,0 +1,36 @@
+/* CSS clearing section */
+
+:root {
+    /* global custom properties */
+    --clr-main: #404048;
+}
+
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--clr-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 .8em 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+p {
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
