@@ -3,6 +3,9 @@
 :root {
     /* global custom properties */
     --clr-main: #404048;
+    --clr-light: #cfcfdf;
+    --margin-bottom: 2em;
+    --bottom-shadow: 0px 4px 8px #ccc, 0px 2px 3px #999;
 }
 
 *,
@@ -32,5 +35,52 @@ h6 {
 
 p {
     line-height: 1.4em;
-    margin-bottom: 1em;
+    margin-bottom: calc(var(--margin-bottom) / 2);
+}
+
+.container {
+    width: min(80%, 1200px);
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: white;
+    /* border-bottom: 4px solid #ccc; */
+    margin-bottom: 2em;
+    box-shadow: var(--bottom-shadow);
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.branding__image {
+    width: 100px;
+    height: auto;
+    margin-right: 1em;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+.nav__item {
+    margin-left: 2em;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--clr-main);
 }
