@@ -7,13 +7,12 @@
     <title>Healthy Content</title>
 
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/importHTML.js"></script>
 </head>
 
 <body>
-    <div id="wrapper" class="wrapper">
+    <div id="wrapper" class="wrapper -wrapper-and-nav">
         <div include-html="partials/header.html"></div>
-        <main class="main">
+        <main class="main" id="main">
             <header class="page-header page-home">Presenting Your Vision</header>
             <section class="intro">
                 <div class="container">
@@ -40,8 +39,11 @@
         </main>
     </div>
     <div include-html="partials/footer.html"></div>
+
+    <script src="js/scripts.js"></script>
     <script>
-        includeHTML();
+        // includeHTML();
+        // toggleNav();
     </script>
 </body>
 
