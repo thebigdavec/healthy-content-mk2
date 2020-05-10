@@ -230,18 +230,18 @@ nav {
 
 .images {
     display: flex;
+    margin: 0 auto;
+    margin-bottom: var(--margin-bottom);
     justify-content: center;
-    padding: 2em;
-    align-self: flex-start;
+    align-items: flex-start;
 }
 
 .books {
-    margin: 1em;
-    margin-bottom: var(--margin-bottom);
+    width: 75%;
 }
 
 .book {
-    width: 100px;
+    width: 30%;
     height: auto;
     box-shadow: var(--bottom-shadow);
     z-index: 3000;
@@ -271,10 +271,17 @@ nav {
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {}
-
-@media (min-width: 1120px) {
+@media (min-width: 768px) {
     .section {
         display: flex;
     }
+    .text {
+        width: 50%;
+    }
+    .images {
+        align-self: center;
+        width: 45%;
+    }
 }
+
+@media (min-width: 1120px) {}
