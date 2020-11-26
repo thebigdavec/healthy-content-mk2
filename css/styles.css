@@ -10,14 +10,14 @@
     --margin-top: calc(5em + 2vw);
     --margin-bottom: 2rem;
     --nav-open: 0em;
-    --top-shadow: 0px -4px 8px #0005, 0px -2px 3px #0009;
-    --bottom-shadow: 0px 4px 8px #0005, 0px 2px 3px #0009;
+    --top-shadow: 0px -4px 8px #0001, 0px -2px 3px #0001;
+    --bottom-shadow: 0px 4px 8px #0001, 0px 2px 3px #0001;
     --transition-speed: 250ms;
 }
 
 *,
- ::before,
- ::after {
+::before,
+::after {
     margin: 0;
     padding: 0;
     border: 0;
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 .8em 0;
+    margin: 0 0 0.8em 0;
     padding: 0;
     line-height: 1em;
 }
@@ -51,7 +51,7 @@ p {
 
 a {
     text-decoration: none;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     color: var(--clr-main);
     transition: color var(--transition-speed) ease-out;
 }
@@ -227,12 +227,12 @@ a:focus {
 
 .nav__toggle:hover .hamburger::before,
 .nav__toggle:focus .hamburger::before {
-    transform: rotate(45deg) translate(10px, -5px) scaleX(.5);
+    transform: rotate(45deg) translate(10px, -5px) scaleX(0.5);
 }
 
 .nav__toggle:hover .hamburger::after,
 .nav__toggle:focus .hamburger::after {
-    transform: rotate(-45deg) translate(10px, 5px) scaleX(.5);
+    transform: rotate(-45deg) translate(10px, 5px) scaleX(0.5);
 }
 
 .nav__toggle .open,
@@ -264,7 +264,7 @@ a:focus {
     text-align: center;
     text-transform: uppercase;
     text-shadow: 0px 0px 15px #0009;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     background-color: var(--clr-mid);
     background-blend-mode: multiply;
     background-size: cover;
@@ -317,7 +317,7 @@ a:focus {
     z-index: 5000;
     position: fixed;
     bottom: 0;
-    background-color: rgba(236, 230, 230, .8);
+    background-color: rgba(236, 230, 230, 0.8);
     width: 100%;
 }
 
@@ -335,6 +335,9 @@ a:focus {
     .images {
         align-self: center;
         width: 45%;
+    }
+    .branding__text {
+        width: fit-content;
     }
 }
 
